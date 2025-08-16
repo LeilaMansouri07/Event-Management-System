@@ -1,5 +1,5 @@
 
-package com.github.LeilaMansouri07.eventmanagmentsystem.model;
+package com.github.LeilaMansouri07.eventmanagementsystem.model;
 
 import jakarta.persistence.*;
 
@@ -28,12 +28,6 @@ import java.time.LocalDate;
 
         public Event() {
 
-        }
-
-        public Event(String busySlot, DayOfWeek dayOfWeek, TimeSlot timeSlot) {
-            this.title = busySlot;
-            this.date = LocalDate.now();
-            this.timeSlot = timeSlot;
         }
 
         public Long getId() {

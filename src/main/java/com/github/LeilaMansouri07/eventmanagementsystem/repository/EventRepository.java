@@ -1,9 +1,9 @@
 
-    package com.github.LeilaMansouri07.eventmanagmentsystem.repository;
+    package com.github.LeilaMansouri07.eventmanagementsystem.repository;
 
 
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.Event;
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.TimeSlot;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.Event;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.TimeSlot;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

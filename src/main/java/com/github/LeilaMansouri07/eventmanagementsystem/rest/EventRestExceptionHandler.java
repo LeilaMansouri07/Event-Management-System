@@ -1,6 +1,6 @@
-package com.github.LeilaMansouri07.eventmanagmentsystem.rest;
+package com.github.LeilaMansouri07.eventmanagementsystem.rest;
 
-import com.github.LeilaMansouri07.eventmanagmentsystem.exception.*;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,10 +1,10 @@
-package com.github.LeilaMansouri07.eventmanagmentsystem.service;
+package com.github.LeilaMansouri07.eventmanagementsystem.service;
 
 
-import com.github.LeilaMansouri07.eventmanagmentsystem.exception.*;
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.Event;
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.TimeSlot;
-import com.github.LeilaMansouri07.eventmanagmentsystem.repository.EventRepository;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.*;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.Event;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.TimeSlot;
+import com.github.LeilaMansouri07.eventmanagementsystem.repository.EventRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

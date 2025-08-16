@@ -1,10 +1,10 @@
 
-package com.github.LeilaMansouri07.eventmanagmentsystem.rest;
+package com.github.LeilaMansouri07.eventmanagementsystem.rest;
 
 
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.Event;
-import com.github.LeilaMansouri07.eventmanagmentsystem.model.TimeSlot;
-import com.github.LeilaMansouri07.eventmanagmentsystem.service.EventService;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.Event;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.TimeSlot;
+import com.github.LeilaMansouri07.eventmanagementsystem.service.EventService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,8 +1,6 @@
-package com.github.LeilaMansouri07.eventmanagmentsystem.service;
+package com.github.LeilaMansouri07.eventmanagementsystem.service;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class EventServiceTest {
 
