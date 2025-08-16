@@ -1,6 +1,9 @@
 package com.github.LeilaMansouri07.eventmanagementsystem.rest;
 
-import com.github.LeilaMansouri07.eventmanagementsystem.exception.*;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.EventNotFoundException;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.NoEventsFoundException;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.NoFreeSlotsException;
+import com.github.LeilaMansouri07.eventmanagementsystem.exception.SlotAlreadyTakenException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -31,13 +34,13 @@ public class EventRestExceptionHandler {
         return buildResponse(ex, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(EventNotFoundException.class)
-    public ResponseEntity<Object> handleNoEventsFound(EventNotFoundException ex) {
+    @ExceptionHandler(NoEventsFoundException.class)
+    public ResponseEntity<Object> handleNoEventsFound(NoEventsFoundException ex) {
         return buildResponse(ex, HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(SlotAlreadyTakenException.class)
-    public ResponseEntity<Object> handleNoFreeSlots(SlotAlreadyTakenException ex) {
+    @ExceptionHandler(NoFreeSlotsException.class)
+    public ResponseEntity<Object> handleNoFreeSlots(NoFreeSlotsException ex) {
         return buildResponse(ex, HttpStatus.CONFLICT);
     }
 

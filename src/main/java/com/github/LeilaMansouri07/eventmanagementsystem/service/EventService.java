@@ -22,7 +22,7 @@ public class EventService {
     public List<Event> getEventsForWeek(LocalDate weekStart, LocalDate weekEnd) {
         List<Event> events = repo.findByDateBetweenOrderByDateAsc(weekStart, weekEnd);
         if (events.isEmpty()) {
-            throw new EventNotFoundException("No events found between " + weekStart + " and " + weekEnd);
+            throw new NoEventsFoundException("No events found between " + weekStart + " and " + weekEnd);
         }
         return events;
     }
@@ -47,7 +47,7 @@ public class EventService {
     public List<Event> getEventsByDate(LocalDate date) {
         List<Event> events = repo.findByDate(date);
         if (events.isEmpty()) {
-            throw new EventNotFoundException("No events found for date: " + date);
+            throw new NoEventsFoundException("No events found for date: " + date);
         }
         return events;
     }
@@ -62,7 +62,7 @@ public class EventService {
         if (!afternoonTaken) free.add(TimeSlot.AFTERNOON);
 
         if (free.isEmpty()) {
-            throw new SlotAlreadyTakenException("No free slots available for date: " + date);
+            throw new NoFreeSlotsException("No free slots available for date: " + date);
         }
 
         return free;
