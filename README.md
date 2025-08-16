@@ -1,7 +1,7 @@
 # Event-Managment-System
 # 🎭 Amphi Scheduler 
 
-This project is a simple program for managing **amphitheater reservations**. It is built with **Spring Boot** in a beginner-friendly way, designed for practice.
+This project is a simple program for managing **amphitheater reservations**. It is built with **Spring Boot** in a beginner-friendly way.
 
 ---
 
@@ -30,4 +30,3 @@ This project is a simple program for managing **amphitheater reservations**. It 
 * Service layer contains business logic and throws exceptions.
 * Controller layer handles these exceptions globally using `@ControllerAdvice` with `GlobalExceptionHandler` for proper HTTP responses.
 * Repository layer generally returns empty results or relies on Spring Data exceptions.
-* This project is at a **junior level** for practicing Spring Boot basics, proper package structure, exception handling, and unit testing.
