@@ -1,7 +1,8 @@
 
-package com.github.LeilaMansouri07.eventmanagementsystem.rest;
+package com.github.LeilaMansouri07.eventmanagementsystem.controller;
 
 
+import com.github.LeilaMansouri07.eventmanagementsystem.model.DayOfWeek;
 import com.github.LeilaMansouri07.eventmanagementsystem.model.Event;
 import com.github.LeilaMansouri07.eventmanagementsystem.model.TimeSlot;
 import com.github.LeilaMansouri07.eventmanagementsystem.service.EventService;
@@ -25,7 +26,7 @@ public class EventController {
         @GetMapping("/week")
         public List<Event> getWeek(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate start) {
             LocalDate end = start.plusDays(5);
-            return service.getEventsForWeek(start, end);
+            return service.getEventsForWeek(DayOfWeek.SATURDAY, DayOfWeek.WEDNESDAY);
         }
 
 

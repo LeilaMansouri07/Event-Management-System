@@ -1,4 +1,4 @@
-package com.github.LeilaMansouri07.eventmanagementsystem.rest;
+package com.github.LeilaMansouri07.eventmanagementsystem.exception.handler;
 
 import com.github.LeilaMansouri07.eventmanagementsystem.exception.EventNotFoundException;
 import com.github.LeilaMansouri07.eventmanagementsystem.exception.NoEventsFoundException;

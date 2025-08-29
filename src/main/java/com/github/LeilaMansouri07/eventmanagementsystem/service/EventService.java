@@ -2,6 +2,7 @@ package com.github.LeilaMansouri07.eventmanagementsystem.service;
 
 
 import com.github.LeilaMansouri07.eventmanagementsystem.exception.*;
+import com.github.LeilaMansouri07.eventmanagementsystem.model.DayOfWeek;
 import com.github.LeilaMansouri07.eventmanagementsystem.model.Event;
 import com.github.LeilaMansouri07.eventmanagementsystem.model.TimeSlot;
 import com.github.LeilaMansouri07.eventmanagementsystem.repository.EventRepository;
@@ -19,8 +20,8 @@ public class EventService {
         this.repo = repo;
     }
 
-    public List<Event> getEventsForWeek(LocalDate weekStart, LocalDate weekEnd) {
-        List<Event> events = repo.findByDateBetweenOrderByDateAsc(weekStart, weekEnd);
+    public List<Event> getEventsForWeek(DayOfWeek weekStart, DayOfWeek weekEnd) {
+        List<Event> events = repo.findByDateBetweenOrderByDateAsc(DayOfWeek.SATURDAY, DayOfWeek.WEDNESDAY);
         if (events.isEmpty()) {
             throw new NoEventsFoundException("No events found between " + weekStart + " and " + weekEnd);
         }
